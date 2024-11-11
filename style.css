@@ -423,6 +423,7 @@ h3 {
 .project {
   background-color: rgba(2, 2, 54, 0.84);
   position: relative;
+  padding: 20px 0 50px 0;
 }
 .project .title-content4 {
   display: flex;
@@ -560,6 +561,9 @@ h3 {
 }
 
 @media only screen and (max-width: 768px) {
+  .project {
+    padding: 20px 0 50px 0;
+  }
   .project .box-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -574,10 +578,7 @@ h3 {
 /* PROJEK ENDS */
 
 /* PENGALAMAN START */
-.pengalaman {
-  background-color: #ffffff89;
-  width: 100%;
-}
+
 
 .pengalaman .content5 .box-wrapper {
   display: flex;
@@ -632,6 +633,7 @@ h3 {
 @media only screen and (max-width: 768px) {
   .pengalaman {
     width: 100vw;
+    padding: 20px 0 50px 0;
   }
   .pengalaman .content5 .box-wrapper {
     width: 100%;
@@ -657,6 +659,7 @@ h3 {
   .pengalaman .content5 .box-pengalaman .content {
     font-size: 1rem;
   }
+
 }
 
 @media only screen and (max-width: 450px) {
