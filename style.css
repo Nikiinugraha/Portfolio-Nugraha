@@ -152,12 +152,10 @@ nav ul li a:hover {
 
 .home .about-me:hover {
   background-color: rgb(40, 89, 181);
-  color: #cccc;
-  transition: all 200ms;
+  transition: all 100ms;
 }
-.home .about-me a:hover {
-  color: white;
-  text-decoration: none;
+.home .about-me:hover span, .home .about-me:hover i{
+  color: #ddd;
 }
 .home .about-me:hover #arrow-bottom {
   transform: translateX(5px);
@@ -425,6 +423,30 @@ h3 {
   position: relative;
   padding: 20px 0 100px 0;
 }
+.project .box-popUp{
+  width: 100%;
+  position: absolute;
+  z-index: 88;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  top: 12%;
+  opacity: 0;
+  
+  background-color: red;
+}
+.project .box-popUp .popupContent{
+width: 30%;
+height: 90%;
+background-color: yellow;
+display: flex;
+justify-content: center;
+gap: 1em;
+}
+.project .box-popUp .popupContent img{
+  width: 100%;
+  height: 100%;
+}
 .project .title-content4 {
   display: flex;
   gap: 10px;
@@ -666,6 +688,11 @@ footer .right-content i:hover{
   position: relative;
   padding: 10px;
   margin: 10px;
+  transition: 200ms;
+}
+
+.pengalaman .content5 .box-pengalaman:hover{
+  transform: scale(102%);
 }
 
 .pengalaman .content5 .box-pengalaman.active {
@@ -781,7 +808,6 @@ footer .right-content i:hover{
 
   .about {
     position: relative;
-
     width: 100%;
     display: flex;
     justify-content: center;
@@ -790,9 +816,6 @@ footer .right-content i:hover{
     width: 100%;
     display: block;
     padding-left: 2em;
-  }
-  .about .content2 .profil-content2 {
-    margin-left: 70px;
   }
   .about .content2 .title {
     text-align: center;
@@ -858,4 +881,8 @@ footer .right-content i:hover{
   .pengalaman .content5 .box-wrapper .box-pengalaman {
     width: 100%;
   }
+}
+
+@media only screen and (max-width: 450px) {
+  
 }
