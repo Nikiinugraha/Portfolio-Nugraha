@@ -423,30 +423,7 @@ h3 {
   position: relative;
   padding: 20px 0 100px 0;
 }
-.project .box-popUp{
-  width: 100%;
-  position: absolute;
-  z-index: 88;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  top: 12%;
-  opacity: 0;
-  
-  background-color: red;
-}
-.project .box-popUp .popupContent{
-width: 30%;
-height: 90%;
-background-color: yellow;
-display: flex;
-justify-content: center;
-gap: 1em;
-}
-.project .box-popUp .popupContent img{
-  width: 100%;
-  height: 100%;
-}
+
 .project .title-content4 {
   display: flex;
   gap: 10px;
@@ -883,6 +860,67 @@ footer .right-content i:hover{
   }
 }
 
-@media only screen and (max-width: 450px) {
-  
+@media only screen and (max-width: 360px) {
+
+  .home{
+    width: 100%;
+  }
+  .home .content1-wrapper{
+   display: flex;
+   flex-direction: column-reverse;
+  }
+
+  .home .profil-img{
+    margin-bottom: 100px;
+  }
+.home .left-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+  margin-right: 50px;
+  gap: 20px;
+}
+
+.home .left-content #introduce{
+  text-align: center;
+}
+.home .left-content p, p span{
+ font-size: 1rem;
+}
+
+.home .left-content span{
+  font-size: 1rem;
+}
+.home .left-content .about-me{
+  margin-top: 0;
+  width: 50%;
+  height: 7vh;
+}
+.home .left-content .about-me span{
+  font-size: 1.5rem;
+}
+
+.home .left-content .medsos-icons{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.about{
+  padding-top: 5em;
+}
+
+.pendidikan .content3 .box-pendidikan{
+  width: 120%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1em;
+}
+.pendidikan .content3 .box-pendidikan .title-box{
+  width: 100%;
+  text-align: center;
+}
 }
